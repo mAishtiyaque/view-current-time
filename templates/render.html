@@ -19,9 +19,8 @@
 <script>
 function play(){
 $.getJSON($SCRIPT_ROOT + '/_play',  function(data) {
-// data handling code
-$('#result').text(data.result);
-//it is here to replace by time removing this no problem
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
 document.getElementById("cn").innerHTML="Now";
 setTimeout(fun,4000);
 });}
